@@ -1,7 +1,7 @@
 This project is a colleciton of vim scripts that relate  to the Mako templating
 engine for python. Most of thse are not at all written by me, just packaged
 here from the vim-script site. The purpose is to make them easy to use with
-pathogen.vim (aka make it into a bundle).
+pathogen.vim.
 
 About mako: http://www.makotemplates.org/
 
