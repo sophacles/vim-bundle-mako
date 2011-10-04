@@ -3,7 +3,7 @@
 " Maintainer:   Armin Ronacher <armin.ronacher@active-4.com>
 " URL:          http://lucumr.pocoo.org/
 " Last Change:  2008 September 12
-" Version:	0.6.1
+" Version:      0.6.1
 "
 " Thanks to Brine Rue <brian@lolapps.com> who noticed a bug in the
 " delimiter handling.
@@ -54,8 +54,8 @@ syn region makoAttributeValue containedin=makoTag contained start=/"/ skip=/\\"/
 syn region makoAttributeValue containedin=MakoTag contained start=/'/ skip=/\\'/ end=/'/
 
 " Tags
-syn region makoTag matchgroup=makoDelim start="<%\(def\|call\|page\|include\|namespace\|inherit\)\>" end="/\?>"
-syn match makoDelim "</%\(def\|call\|namespace\)>"
+syn region makoTag matchgroup=makoDelim start="<%\(def\|call\|page\|include\|namespace\|inherit\|block\)\>" end="/\?>"
+syn match makoDelim "</%\(def\|call\|namespace\|block\)>"
 
 " Newline Escapes
 syn match makoEscape /\\$/
