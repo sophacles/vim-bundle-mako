@@ -86,4 +86,4 @@ if version >= 508 || !exists("did_mako_syn_inits")
   delc HiLink
 endif
 
-let b:current_syntax = "eruby"
+let b:current_syntax = "html"
