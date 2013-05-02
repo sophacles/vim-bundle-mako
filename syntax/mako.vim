@@ -27,6 +27,9 @@ endif
 ru! syntax/html.vim
 unlet b:current_syntax
 
+" tell html.vim what syntax groups should take precedence (see :help html.vim)
+syn cluster htmlPreproc add=makoLine,makoVariable,makoTag,makoDocComment,makoDefEnd,makoText,makoDelim,makoEnd,makoComment,makoEscape
+
 "Put the python syntax file in @pythonTop
 syn include @pythonTop syntax/python.vim
 
