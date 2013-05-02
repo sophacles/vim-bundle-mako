@@ -2,8 +2,8 @@
 " Language:     Mako
 " Maintainer:   Armin Ronacher <armin.ronacher@active-4.com>
 " URL:          http://lucumr.pocoo.org/
-" Last Change:  2008 September 12
-" Version:      0.6.1
+" Last Change:  2013-05-01
+" Version:      0.6.1+
 "
 " Thanks to Brine Rue <brian@lolapps.com> who noticed a bug in the
 " delimiter handling.
