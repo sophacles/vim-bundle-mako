@@ -12,3 +12,18 @@ if g:mako_detect_lang_from_ext
   exe 'au BufReadPre *.*' . g:mako_extension . ' execute "do BufRead filetypedetect " . expand("<afile>:r") | let b:mako_outer_lang = &filetype'
 endif
 exe 'au BufRead,BufNewFile *' . g:mako_extension . ' set filetype=mako'
+autocmd BufNewFile,BufRead *.html call s:SelectHTML()
+
+" Figure out which type of hilighting to use for html
+fun! s:SelectHTML()
+  let n = 1
+  while n < 5 && n <= line("$")
+    " check for mako
+    if getline(n) =~ '<%.*'
+      set ft=mako
+      return
+    endif
+    let n = n + 1
+  endwhile
+endfun
+
