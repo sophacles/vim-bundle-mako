@@ -2,7 +2,7 @@ if !exists("g:mako_detect_lang_from_ext")
   let g:mako_detect_lang_from_ext = 1
 endif
 if !exists("g:mako_extension")
-  let g:mako_extension = .mako
+  let g:mako_extension = ".mako"
 endif
 if g:mako_detect_lang_from_ext
   exe 'au BufNewFile *.*' . g:mako_extension . ' execute "do BufNewFile filetypedetect " . expand("<afile>:r") | let b:mako_outer_lang = &filetype'
