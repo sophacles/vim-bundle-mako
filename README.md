@@ -13,6 +13,7 @@ Useful configuration variables:
 * `g:mako_default_outer_lang`: if ftdetect cannot detect the "outer" filetype of
   the file, this sets the default filetype used. If not set, defaults to "html".
 * `g:mako_extension`: set to the default string (with leading dot).  Default is ".mako"
+* `g:mako_find_in_html`: search the content of `.html` files for mako tags. 
 
 About mako: http://www.makotemplates.org/
 
